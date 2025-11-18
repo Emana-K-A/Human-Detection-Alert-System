@@ -8,9 +8,9 @@ from datetime import datetime
 # ============ EMAIL CONFIG ============
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-EMAIL_SENDER = "emanaponnu@gmail.com"          # <- change
-EMAIL_PASSWORD = "ncjrfiljassbrdhp"      # <- change (Gmail app password)
-EMAIL_RECEIVER = "emanaponnu@gmail.com"  # <- change
+EMAIL_SENDER = "your@gmail.com"          # <- change
+EMAIL_PASSWORD = "your_app_password_here"      # <- change (Gmail app password)
+EMAIL_RECEIVER = "your@gmail.com"  # <- change
 
 def send_email_with_image(image_path):
     msg = EmailMessage()
@@ -66,4 +66,5 @@ while cap.isOpened():
         break
 
 cap.release()
+
 cv2.destroyAllWindows()
